@@ -25,11 +25,20 @@ func main() {
 	// zero value for an `int` is `0`.
 	var e int
 	fmt.Println(e)
+	
+	var ee int
+	fmt.Println(ee)
+
+	// const ee string
+	// fmt.Println(ee)
 
 	// The `:=` syntax is shorthand for declaring and
 	// initializing a variable, e.g. for
 	// `var f string = "apple"` in this case.
 	// This syntax is only available inside functions.
 	f := "apple"
-	fmt.Println(f)
+	fmt.Println(f) 
+
+	g := "orange" 
+	fmt.Println(g)
 }
