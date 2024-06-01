@@ -10,9 +10,16 @@ func main() {
 	// The most basic type, with a single condition.
 	i := 1
 	for i <= 3 {
-		fmt.Println(i)
+		fmt.Println( i)
 		i = i + 1
 	}
+
+	j := 1
+	for j > 3 {
+		fmt.Println("for output j: ",j)
+		j = j + 1
+	}
+
 
 	// A classic initial/condition/after `for` loop.
 	for j := 0; j < 3; j++ {
@@ -24,6 +31,11 @@ func main() {
 	for i := range 3 {
 		fmt.Println("range", i)
 	}
+
+	for i := range 4 {
+		fmt.Println("range i: ", i)
+	}
+
 
 	// `for` without a condition will loop repeatedly
 	// until you `break` out of the loop or `return` from
@@ -40,5 +52,12 @@ func main() {
 			continue
 		}
 		fmt.Println(n)
+	}
+
+	for m:= range 2{
+		if m%2 == 0{
+			continue
+		}
+		fmt.Println("for m: range 2 continue: ",m)
 	}
 }
