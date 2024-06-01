@@ -10,18 +10,29 @@ import (
 
 // `const` declares a constant value.
 const s string = "constant"
+const r string = "relaxation penetration"
+
 
 func main() {
+
 	fmt.Println(s)
+
+	fmt.Println(r)
 
 	// A `const` statement can appear anywhere a `var`
 	// statement can.
 	const n = 500000000
 
+	const m = 250
+
 	// Constant expressions perform arithmetic with
 	// arbitrary precision.
 	const d = 3e20 / n
 	fmt.Println(d)
+
+	const e = 1000/ m
+	fmt.Println(e)
+
 
 	// A numeric constant has no type until it's given
 	// one, such as by an explicit conversion.
